@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.eseiaat.upc.pma.borreguero.daniel.kmamillasp.MainActivity">
+
+    <TextView
+        android:id="@+id/text_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/km"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/edit_km" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/millas"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/text_km"
+        app:layout_constraintRight_toRightOf="@+id/text_km"
+        app:layout_constraintTop_toBottomOf="@+id/text_km" />
+
+    <EditText
+        android:id="@+id/edit_km"
+        android:layout_width="128dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/text_km"
+        app:layout_constraintLeft_toRightOf="@+id/text_km"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_millas"
+        android:layout_width="128dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+        app:layout_constraintLeft_toLeftOf="@+id/edit_km"
+        app:layout_constraintRight_toRightOf="@+id/edit_km" />
+
+
+
+</android.support.constraint.ConstraintLayout>
